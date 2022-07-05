@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!--charset alfabe içindir UTF-8 latin alfabesi içindir bunu sebebi web sitesinin harflerinin doğru gözükmesidir-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="20;URL=workOne.html">
+    <!-- <meta http-equiv="refresh" content="20;URL=workOne.html"> -->
     <!--Burada Site açıldıktan 20 sn sonra workOne.htmlye gitsin demektedir-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="dominantcolor" content="red">
@@ -23,14 +23,109 @@
     document.write("Script ile yazıldı")
 </script>
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="" type="image/x-icon">
+<link rel="icon" href="images/among us_icon.png" type="image/x-icon">
 <!--Burada rel kısmmı dış kaynaktaki içeriği html dökumanımıza nasıl göstericeğimizi söylemektedir genellikle stylesheet ve icon kullanılmaktadır
 href kısmı dosyamızın ya da baplantının path yazıldığı yerdir
 type ise dosyanın tipni vermektedir. -->
 
 </head>
 <body>
-    <h1>Liste Türleri</h1>
+
+<h1>Semantic(Anlamlandırılmış) HTML Etiketleri Kullanımı</h1>
+
+<nav>
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Facilis, ab temporibus.</li>
+        <li>Harum, incidunt tempore?</li>
+    </ul>
+</nav>
+<hr>
+<main>
+    <aside>
+        <h2>Left Bar</h2>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Deserunt, vel!</li>
+                <li>Expedita, ex.</li>
+                <li>Deserunt, quas!</li>
+            </ul>
+    </aside>
+
+    <section>
+        <article>
+            <h2>Lorem.</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Cupiditate labore amet pariatur neque.</p>
+        </article>
+
+
+        <article>
+            <h2>Aperiam.</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Dignissimos nobis voluptate facilis optio!</p>
+        </article>
+    
+        <article>
+            <h1>Eveniet?</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Vitae iste placeat quidem non!</p>
+    </section>
+</main>
+
+<footer>
+    <h2>Footer.</h1>
+    <p>Lorem, ipsum dolor.</p>
+</footer>
+
+<hr>
+
+<h1>Linkler İle Çalışmak</h1>
+    <!-- 1.başka bir web browsere git -->
+    <!-- 2.başka bir sayfaya git -->
+    <!-- 3.Aynı sayfa içerisinde başka bir yere -->
+    <!-- 4.mail at -->
+    <!-- 5.telefon et -->
+
+<!-- 1. örnek
+    <a href="https://Kodluyoruz.org" target="_blank">
+    Burada _blank linkin başka bir sayfada açılmasını sağlar
+    Kodluyoruz sayfasına Gidilecek</a> -->
+<!-- <br> -->
+<!-- <br> Bir alt satıra geç demek -->
+<!-- 2. örnek 
+<a href="iletisim.html">
+    İletişim sayfasına Git </a> -->
+<p>Lorem ipsum dolor sit,  <span style="color:red">amet consectetur</span> <em>adipisicing elit</em>. Amet, voluptates?</p>
+    <!-- span tagı bir yerde bir özelik vermek isteyip diğer özelliklerin değişmemesini istediğimiz zamna kullanılır  -->
+    <!-- div tagı belli yapıları bir araya getirmek için kullanılır -->
+<div>
+    <ul>
+        <li>
+            <a href="https://Kodluyoruz.org" target="_blank">
+            <!-- Burada _blank linkin başka bir sayfada açılmasını sağlar -->
+            Kodluyoruz sayfasına Gidilecek</a>
+        </li>
+        <li><a href="iletisim.html">
+            İletişim sayfasına Git </a>
+        </li>
+        <li>
+            <a href="#footer">En alt kısma Git</a>
+        </li>
+        <li>
+            <a href="mailto:info@kodluyoruz.org">
+                Kodluyoruz'a Mail At
+            </a>
+        </li>
+        <li>
+            <a href="tel:553 345 5445">telefon Aç</a>
+        </li>
+    </ul>
+</div>
+<hr>
+    <!-- hr tagı çizgi çekmemi sağlar -->
+
+<h1>Liste Türleri</h1>
     <ul style="list-style-type:square;">
         <h2>Sırasız Listeler</h2>
         <li>HTML</li> <!--Sırasız Liste-->
@@ -45,27 +140,15 @@ type ise dosyanın tipni vermektedir. -->
         <li>JavaScript</li>
     </ol>
 
-    <h3><strong>Kodluyoruz</strong></h3>
-    <!--Burada <strong> paragrafları kalınlaştırır-->
-    <p><b>HTML</b> <br>Etiketleri</p>
-    <!--Burada <b> metni kalınlaştırır-->
-    <img width="600" height="300" src="images/doga.jpg" alt="doğa resmi">
-    <!--Burada src=resmin path(yolunu)yazıyoruz, alt=resmin açıklamısını yazıyoruz bunu istersek yazmayabiliriz-->
-    
-    <iframe width="600" height="300" src="https://www.youtube.com/embed/VUDP2-lPA5o"
-    title="HTML I En Çok Kullanılan HTML Etiketleri Nelerdir? #2" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
-    <!--Burada <iframe> etiketi bizim belge içinde belge göstermemizi sağlar genelde başka yerdeki belgeyi göstermeye yarar-->
-    
-    <button>buton</button>
-
+<hr>
     <!-- Örnek Yorum Satırı -->
     <!--
         2.Örnek Yorum Satırı
     -->
     <!-- hızlı bir yorum satırı için ctrl+shift+/ -->
-    <h2>Emmet / Zen Coding </h2>
+    
+    
+<h1>Emmet / Zen Coding </h2>
     <!-- Emmet Özellikleri: Emmet html kodunu daha hızlı yazmamızı sağlar 
         + Kardeş Öge
         * Çarp ==> p3
@@ -76,30 +159,73 @@ type ise dosyanın tipni vermektedir. -->
         . ==> class
         # id
     -->
-
-    <!--kardeş öge  h1+h2-->
-    <h1></h1>
-    <h2></h2>
-    <!--çarp h1*3 -->
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <!-- içine öge ul>li-->
     <ul>
-        <li>Emmet ile Yapıldı</li>
+        <li><strong>Kardeş Öğe</strong></li>
+        <p>Örn: h1 + h2</p>
+        <p>Sonuç: aynı anda h1 ve h2 etiketi açılacaktır</p>
+        
+        <li><strong>Çarp</strong></li>
+        <p>Örn: p * 3 </p>
+        <p>Sonuç: aynı anda 3 tane p etiketi oluşacaktır</p>
+        
+        <li><strong>İçine Öge</strong></li>
+        <p>Örn: ul > li</p>
+        <p>Sonuç: ul etiketinin içine li etiketi oluşacaktır</p>
+        
+        <li><strong>Üstüne Öge</strong></li>
+        <p>Örn: ul ^ p</p>
+        <p>Sonuç: ul etiketinin üstüne p etiketi oluşacaktır</p>
+        
+        <li><strong>İd #</strong></li>
+        <p>Örn: h3 #id1 > lorem</p>
+        <p>Sonuç: h3 tagin içine id1 adlı id oluştu h3'ün içine lorem yazıldı</p>
+        
+        <li><strong>class .</strong></li>
+        <p>Örn: h3 . deneme</p>
+        <p>Sonuç:h3 içinde deneme adlı class oluştu </p>
+    </ul>  
+<hr>
+
+
+<h1 id="footer">Görsellerle Çalışmak</h2>
+    <ul>
+        <li>Bağlantı yoluyla</li>
+        <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_260,h_150/https://assets.ubuntu.com/v1/fe859a7f-Jammy+Jellyfish+RGB.svg">
+        <li>İndirerek</li>
+        <img src="images/1.jpg" alt="developer">
     </ul>
-    <!-- üstüne öge ul^p-->
-    <ul></ul>
-    <p></p>
-    <!-- id  h3#id1>lorem1-->
-    <h3 id="id1">Lorem.</h3>
-    <!-- class h3.deneme-->
-    <h3 class="deneme"></h3>
+<hr>
 
-    <h2>Görsellerle Çalışmak</h2>
 
-    <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_260,h_150/https://assets.ubuntu.com/v1/fe859a7f-Jammy+Jellyfish+RGB.svg">
-    <img src="images/1.jpg" alt="developer">
+<h1>Block ve İnline Elementler</h1>
+    <ul>
+        <li><strong>Block Element</strong></li>
+        <p>Block elementler kendi çevresinin tamamını kaplamaktadır</p>
+        <p>Web sayfasını incele yaptığınız zaman başlığın block Element olduğunu görüceksiniz</p>
+        <li><strong>İnline Element</strong></li>
+        <p>İnline elementler kendi yazısı kadar yer kaplamaktadır</p>
+        <p>Web sayfasını incele yaptığınız zaman strong'un inline olduğunu görüceksiniz</p>
+        <a href="https://htmlreference.io/ " target="_blank">Block ve Inline Elementler için detaylI bilgi</a>
+    </ul>
+
+    
+<img width="600" height="300" src="images/doga.jpg" alt="doğa resmi">
+    <!--Burada src=resmin path(yolunu)yazıyoruz, alt=resmin açıklamısını yazıyoruz bunu istersek yazmayabiliriz-->
+    
+
+<iframe width="600" height="300" src="https://www.youtube.com/embed/VUDP2-lPA5o"
+title="HTML I En Çok Kullanılan HTML Etiketleri Nelerdir? #2" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+    <!--Burada <iframe> etiketi bizim belge içinde belge göstermemizi sağlar genelde başka yerdeki belgeyi göstermeye yarar-->
+
+
+<p><strong>strong etiketi ile kalınlaştırıldı</strong></p>
+    <!--Burada <strong> paragrafları kalınlaştırır-->
+<p><b>b etiketi ile kalınlaştırıldı</b></p>
+    <!--Burada <b> metni kalınlaştırır-->
+
+<button>buton</button>
 
 </body>
 </html>
