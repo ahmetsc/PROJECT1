@@ -7,6 +7,56 @@ em yazı tipi boyutunu browsser'de ayarlar */
 /*class -> .text-red {}  */
 /*id -> #id-bilgisi {}  */
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.gradient {
+    background: linear-gradient(90deg, rgba(45,156,219,.6), rgba(155,81,224,.6));
+
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 15px 7px rgba(0,0,0,0.03); 
+    box-shadow: 2px 2px 15px 7px rgba(0,0,0,0.03);
+}
+.container{
+    margin-top: 50px;
+    width: 1000px;
+    margin: 50px auto 0;
+}
+
+.left-bar{
+    width: 200px;
+    float: left;
+}
+
+.content{
+    width: 800px;
+    float: left;
+}
+
+.card {
+    width: 20%;
+    float: left;
+    padding: 5%;
+    margin-right: 3%;
+    background-color: rgba(209, 209, 209);
+    border-radius: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
 .box {
     width: 300px;
     height: 300px;
@@ -26,6 +76,9 @@ em yazı tipi boyutunu browsser'de ayarlar */
     background-color: green;
 }
 
+.bg-yellow {
+    background-color: yellow;
+}
 
 
 
