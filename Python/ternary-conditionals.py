@@ -1,5 +1,6 @@
 #Çok satırlı if-else koşullu durumdan tek satırlı olarak kullanılır.
 
+
 #örnek1
 cevap = input("x'in değeri 2 olsun mu? y/n: ")
 
