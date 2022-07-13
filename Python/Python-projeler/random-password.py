@@ -1,8 +1,6 @@
 #Burada Random şifre oluşturma kodu yazıcağız.
 
-from calendar import c
 from random import *
-from re import X
 
 secim = input("Parola Oluşturmak için y/n:")
 
